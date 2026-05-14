@@ -1,23 +1,42 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Projeto VS Code</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
 
-    <div class="container">
-        <h1>Contador Interativo</h1>
-        <p id="valor">0</p>
-        <div class="botoes">
-            <button id="diminuir">Diminuir</button>
-            <button id="resetar">Resetar</button>
-            <button id="aumentar">Aumentar</button>
-        </div>
-    </div>
+.container {
+    text-align: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-    <script src="main.js"></script>
-</body>
-</html>
+#valor {
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+#aumentar { background-color: #4caf50; color: white; }
+#diminuir { background-color: #f44336; color: white; }
+#resetar { background-color: #333; color: white; }
+
+button:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
